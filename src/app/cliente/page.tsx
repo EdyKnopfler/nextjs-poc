@@ -34,7 +34,7 @@ export default function CepPaginaCliente() {
       {erro && <p>Erro: {erro}</p>}
 
       <form onSubmit={submitForm}>
-        <label htmlFor="cep">CEP:</label>
+        <label htmlFor="cep">CEP:</label> <br />
         <input id="cep" name="cep" type="text" />
         <button type="submit">Consultar</button>
       </form>
