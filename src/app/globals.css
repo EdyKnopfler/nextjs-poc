@@ -12,6 +12,11 @@ p {
   margin-bottom: 0.2em;
 }
 
+.navegacao-principal a {
+  display: inline-block;
+  margin: .5em;
+}
+
 .main {
   margin: 15px;
 }
