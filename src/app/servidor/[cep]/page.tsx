@@ -10,6 +10,7 @@ export default async function CepPaginaServidor({ params }) {
   return (
     <>
       <h1>{dados.cep}</h1>
+      <p>Experimente mudar o CEP na URL!</p>
       {Object.keys(dados).map((k, i) => 
         <p key={i}>
           <b>{k}:</b> {dados[k]}
