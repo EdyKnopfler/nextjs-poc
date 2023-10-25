@@ -17,4 +17,4 @@ Abra [http://localhost:3000](http://localhost:3000).
   * Realiza fetch de dados no servidor
 * Cliente
   * Realiza fetch de dados no cliente
-  * Formulário alimentado por AJAX usando o idiomismo natural do React.js
+  * Dados de formulário enviados por AJAX usando o idiomismo natural do React.js
