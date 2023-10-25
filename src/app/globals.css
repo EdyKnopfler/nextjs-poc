@@ -11,3 +11,7 @@ h1, h2, h3, form {
 p {
   margin-bottom: 0.2em;
 }
+
+.main {
+  margin: 15px;
+}
