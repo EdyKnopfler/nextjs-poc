@@ -22,6 +22,7 @@ export default function RootLayout({
           <Link href="/">Início</Link>
           <Link href="/servidor/37550001">Página renderizada no servidor</Link>
           <Link href="/cliente">Página renderizada no cliente</Link>
+          <Link href="/contexto">Compartilhando contexto</Link>
         </nav>
         <main className="main">
           {children}
