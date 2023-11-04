@@ -18,6 +18,9 @@ Abra [http://localhost:3000](http://localhost:3000).
 * Cliente
   * Realiza fetch de dados no cliente
   * Dados de formulário enviados por AJAX usando o idiomismo natural do React.js
+* Contexto
+  * Como gerenciar um estado que perpassa uma sub-árvore inteira?
+  * Com contexts & reducers!
 
 ## Leituras
 
