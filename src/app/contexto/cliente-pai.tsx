@@ -1,22 +1,24 @@
-import { createContext } from "react";
 import ClienteFilho1 from "./cliente-filho-1";
 import ClienteFilho2 from "./cliente-filho-2";
-
-export const MeuContexto = createContext({
-  usuario: { 
-    nome: '', 
-    email: '' 
-  }
-})
+import ComponenteQueAlteraOContexto from "./cliente-filho-dispatcher";
+import { EstadoContext, criarEstadoReducer } from "./estado-global";
 
 export default function ClientePai() {
   // Veio do banco de dados, de API externa, da...
-  const usuario = { nome: 'Scania', email: 'kania@gato.com' }
+  const estadoInicial = {
+    usuario: {
+      nome: 'Scania', 
+      email: 'kania@gato.com' 
+    }
+  }
+
+  const estadoReducer = criarEstadoReducer(estadoInicial)
 
   return (
-    <MeuContexto.Provider value={{usuario}}>
+    <EstadoContext.Provider value={estadoReducer}>
       <ClienteFilho1 />
       <ClienteFilho2 />
-    </MeuContexto.Provider>
+      <ComponenteQueAlteraOContexto />
+    </EstadoContext.Provider>
   )
 }

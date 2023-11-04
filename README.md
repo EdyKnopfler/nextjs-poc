@@ -29,3 +29,4 @@ Ajudaram-me a entender de uma vez por todas a separação dos estados/contextos 
 * https://prismic.io/blog/advanced-nextjs-server-context
 * https://medium.com/@ahmedenany9812/state-management-in-next-js-13-app-router-3892a56261ce
 * https://dev.to/perssondennis/react-anti-patterns-and-best-practices-dos-and-donts-3c2g
+* https://react.dev/learn/scaling-up-with-reducer-and-context

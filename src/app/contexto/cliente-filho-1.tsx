@@ -1,9 +1,11 @@
 import { useContext } from "react"
-import { MeuContexto } from "./cliente-pai";
+import { EstadoContext } from "./estado-global";
 
 export default function ClienteFilho1() {
-  const { usuario } = useContext(MeuContexto);
+  const estadoReducer = useContext(EstadoContext);
+  const [ estadoAtual, alterarEstado ] = estadoReducer
+
   return (
-    <p>Nome: {usuario.nome}</p>
+    <p>Nome: {estadoAtual.usuario.nome}</p>
   )
 }
