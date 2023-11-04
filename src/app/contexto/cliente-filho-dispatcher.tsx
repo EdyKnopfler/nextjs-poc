@@ -1,9 +1,8 @@
-import { useCallback, useContext } from "react"
-import { ACAO_ALTERAR_USUARIO, EstadoContext, criarEstadoReducer } from "./estado-global"
+import { useCallback } from "react"
+import { ACAO_ALTERAR_USUARIO, lerEstadoContext } from "./estado-global"
 
 export default function ComponenteQueAlteraOContexto() {
-  const estadoReducer = useContext(EstadoContext);
-  const [ estadoAtual, alterarEstado ] = estadoReducer
+  const { estadoAtual, alterarEstado } = lerEstadoContext()
 
   const alterarClick = useCallback(() => {
     alterarEstado({ 

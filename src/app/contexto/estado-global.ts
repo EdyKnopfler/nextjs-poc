@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react"
+import { createContext, useContext, useReducer } from "react"
 
 export const EstadoContext = createContext({
   usuario: {
@@ -30,5 +30,11 @@ export function criarEstadoReducer(
   estadoInicial: { usuario: { nome: string, email: string } }
 ) {
   return useReducer(estadoReducer, estadoInicial)
+}
+
+export function lerEstadoContext() {
+  const estadoReducer = useContext(EstadoContext);
+  const [ estadoAtual, alterarEstado ] = estadoReducer
+  return { estadoAtual, alterarEstado }
 }
 
